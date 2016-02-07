@@ -1,7 +1,9 @@
 body
 {
-background-image: url("backGroundSpace.jpg");
-background-repeat: no-repeat;
+background-image: url("backGroundSpace.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 background-size: cover;
 margin:0;
 padding:0;
