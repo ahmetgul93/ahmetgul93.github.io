@@ -1,6 +1,14 @@
 body
 {
-background-image: url("calisma_var.jpg");
+background-image: url("backGroundSpace.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+#GameButton
+{
+	background-color: yellow;
+	position: relative;
+	left: 600px;
+	top: 500px;
 }
