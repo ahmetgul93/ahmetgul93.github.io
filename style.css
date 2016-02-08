@@ -1,8 +1,9 @@
 body
 {
 background-image: url("backGroundSpace.jpg");
-background-repeat: no-repeat;
+background-repeat: repeat-y;
 background-size: cover;
+background-attachment: fixed;
 margin:0;
 padding:0;
 }
