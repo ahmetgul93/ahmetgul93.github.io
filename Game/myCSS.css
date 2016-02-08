@@ -20,5 +20,11 @@ h1{
 #CopyRight
 {
 	position: relative;
-	top: 100px;
+	top: 200px;
+}
+#myBackGround
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
