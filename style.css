@@ -1,8 +1,14 @@
 body
 {
 background-image: url("backGroundSpace.jpg");
+<<<<<<< HEAD
 background-repeat: no-repeat;
 //background-size: cover;
+=======
+background-repeat: repeat-y;
+background-size: cover;
+background-attachment: fixed;
+>>>>>>> c9b34e8f52a19b0d024c058ca8781cd10cbb6307
 margin:0;
 padding:0;
 }
