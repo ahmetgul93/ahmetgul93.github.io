@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<html lang="en">
+  <head>
+    <title>Personal Page of Ahmet GÜL</title>
+    <meta charset="utf-8"> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Bootstrat -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Benim CSS -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	
+  </head>
+  
+  <body>
+  <!-- div kullanarak sayfayı kısımlara ayırıyorum -->
+  
+  <!-- img-circle class'ı bootstrapt'tan , mySlides class'ı benim tarafımdan verildi ! -->
+  <div class="container-fluid bg-1 text-center">
+	<h1>Who Am I?</h1>
+		<img  src="images/AhmetGUL_Photo1.jpg" class="img-circle  mySlides" alt="Ahmet GÜL in Germany">
+		<img  src="images/AhmetGUL_Photo2.jpg" class="img-circle  mySlides" alt="Ahmet GÜL in Bulgaria">
+		<img  src="images/AhmetGUL_Photo3.jpg" class="img-circle  mySlides" alt="Ahmet GÜL in Greece">
+		<img  src="images/AhmetGUL_Photo4.jpg" class="img-circle  mySlides" alt="Ahmet GÜL in France">
+	<h3>I'm Ahmet GÜL</h3>
+  </div>
+  
+		<script>
+		var myIndex = 0;
+		carousel();
 
-<body>
-<div class = "ust_taraf">
-	<canvas id="sitemap" ></canvas>
-			<h1>
-			<DIV style="position: absolute; left:500px; height:80px">
-			<b>Web Page is not ready yet!</b>
-			</h1>
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			x[myIndex-1].style.margin = "0 auto"; // resmi ortalamak için ! 
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+		</script>
+  
+  <div class="container-fluid bg-2 text-center">
+	<h1>What Am I?</h1>
+		<p>I'm a computer engineer who graduated from Ege University Computer Engineering Department.</p>
+		<p>I'm interested in software engineering, application fields of artificial intelligence and innovation. </p>
+	</div>
 
-			<input type="button" id="GameButton" value="GAME TIME!" onclick="window.location.href='Game/html5.html';">4
-	</canvas>
-</div> <!-- ust_taraf end -->
-
-<div class="container">
-<div class="content_holder">
-				<!-- Facebook -->
-				<a href="https://www.facebook.com/ahmet.gul.9678" title="Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
-				<!-- LinkedIn --> 
-				<a href="https://www.linkedin.com/in/ahmetgul93" title="LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
-				<!-- GitHub -->
-				<a href="https://github.com/ahmetgul93" title="GitHub" target="_blank" class="btn btn-github"><i class="fa fa-github"></i> GitHub</a>
-			</div>
-</div> <!-- container end -->
-
-</body>
+  <div class="container-fluid bg-3 text-center">
+    <h1>Where To Find Me?</h1>
+	
+	<!-- Table'ı linkleri yan yana siralamak icin kullandim ! Div gelince asagi kayiyordu ! Daha iyi bir cozum bulmak gerekli! -->
+	
+	  <table align="center" id="Links">
+		<tr>
+		
+		    <td>
+					<!--Github Profile  -->
+					<iframe src="http://githubbadge.appspot.com/ahmetgul93" frameBorder="0" align="top" ></iframe>
+			</td>
+			
+			<td>
+					<!-- Facebook Badge START -->
+					<a href="https://www.facebook.com/ahmet.gul.9678"></a><a href="https://www.facebook.com/ahmet.gul.9678" title="Ahmet GUL"><img class="img" src="https://badge.facebook.com/badge/669894841.7531.1262253785.png" alt="Ahmet GÜL's profile!" /></a>
+			</td>
+			
+			<td>		
+					<!--Linkedin Profile -->
+					<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+					<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="tr_TR" data-type="horizontal" data-theme="light" data-vanity="ahmetgul93"><a class="LI-simple-link" href='https://tr.linkedin.com/in/ahmetgul93?trk=profile-badge'>AHMET GÜL</a></div>
+			</td>
+		
+	   </tr>
+	  </table>
+   </div>
+   
+  </body>
 </html>

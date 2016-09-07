@@ -1,0 +1,26 @@
+#Links {
+	border-collapse: separate;
+    border-spacing: 20px; 
+}
+
+.mySlides {
+	display:none;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.bg-1 { 
+    background-image: url("images/backGroundSpace.jpg");
+    color: #ffffff;
+}
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
