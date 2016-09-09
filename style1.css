@@ -14,7 +14,7 @@
 
 .bg-1 { 
     background-image: url("images/backGroundSpace.jpg");
-    color: #ffffff;
+	color: #ffffff;
 }
 .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
@@ -23,8 +23,4 @@
 .bg-3 { 
     background-color: #ffffff; /* White */
     color: #555555;
-}
-.bg-4 {
-	background-image: url("images/backGroundSpace.jpg");
-    color: #ffffff;
 }

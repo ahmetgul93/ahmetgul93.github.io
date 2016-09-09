@@ -17,18 +17,33 @@
 	
   </head>
   
+	 <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">Personal Page of Ahmet GÜL</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="#firstJump" >Who Am I ?</a></li>
+		  <li><a href="#secondJump">My Photos</a></li>
+		  <li><a href="#thirdJump" >About me</a></li>
+		  <li><a href="#forthJump" >How to reach me ?</a></li>
+		</ul>
+	</nav>
+  
+ 
   <body>
+		
   <!-- div kullanarak sayfayı kısımlara ayırıyorum -->
   
   <!-- img-circle class'ı bootstrapt'tan , mySlides class'ı benim tarafımdan verildi ! -->
-  <div class="container-fluid bg-1 text-center">
+  <div class="container-fluid bg-1 text-center" id = "firstJump">
 	<h1>Who Am I?</h1>
 		<img  src="images/AhmetGUL_Photo1.jpg" class="img-circle" alt="Ahmet GÜL in Germany, Erasmus+">
 		<h3>I'm Ahmet GÜL from İzmir, TÜRKİYE</h3>
 		<h3>Another New Grad CEng from BilMuh ! </h3>
-  </div>	
-   
-  <div class="container-fluid bg-4 text-center" style="padding-left: 0px;  padding-right: 0px;">		
+  </div>
+  
+  <div class="container-fluid bg-1 text-center" id = "secondJump">
 		<img  src="images/slides/AhmetGUL_Photo1.jpg" class="mySlides img-responsive" alt="Ahmet GÜL in Paris, Erasmus+">
 			
 		<img  src="images/slides/AhmetGUL_Photo2.jpg" class="mySlides img-responsive" alt="Ahmet GÜL in Varna, AIESEC">
@@ -59,13 +74,13 @@
 		}
 		</script>
   
-  <div class="container-fluid bg-2 text-center">
+  <div class="container-fluid bg-2 text-center" id = "thirdJump">
 	<h1>What Am I?</h1>
 		<p>I'm a computer engineer who graduated from Ege University Department of Computer Engineering.</p>
 		<p>I'm interested in software engineering, application fields of artificial intelligence and innovation. </p>
 	</div>
 
-  <div class="container-fluid bg-3 text-center">
+  <div class="container-fluid bg-3 text-center" id = "forthJump">
     <h1>Where To Find Me?</h1>
 	
 	<!-- Table'ı linkleri yan yana siralamak icin kullandim ! Div gelince asagi kayiyordu ! Daha iyi bir cozum bulmak gerekli! -->
