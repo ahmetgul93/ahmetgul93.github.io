@@ -4,4 +4,4 @@ Hey there,
 
 This is the "Personal Page" of myself!
 
-Please click --> ahmetgul93.github.io
+Please click --> https://ahmetgul93.github.io
