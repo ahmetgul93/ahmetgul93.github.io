@@ -12,6 +12,10 @@
     padding-bottom: 70px;
 }
 
+.dropdown:hover .dropdown-menu { /* Mouse üzerine gelince menü açılıyor */
+   display: block;
+}
+
 .bg-1 { 
     background-image: url("images/backGroundSpace.jpg");
 	color: #ffffff;
